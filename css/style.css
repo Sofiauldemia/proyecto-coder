@@ -1,0 +1,674 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* SECCION INICIO */ 
+
+/* header */                     
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+header .menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+ul li a{                                     
+    text-decoration: none;
+    color:black;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-family: sans-serif;
+    border-bottom: 4px solid transparent;
+    /* TRANSITION:al pasar sobre el menu ,
+    hace una linea debajo con efecto de 3s */
+    transition: border .3s ease;
+}
+
+ul li a.active{
+    border-bottom-color:yellow;
+}
+
+ul li a:hover{
+   border-bottom-color: yellow;
+}
+
+.logo img{
+    width: 150px;
+    margin-left: 50px;
+}
+
+
+/* MAIN */
+.intro{
+    background-image: url(../images/motoefectoazul.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-top:0.5px;
+    margin-top: 0.5px;
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+}
+
+.intro-titulo{
+    margin:  200px 300px 0  50px ;
+    font-size: 50px; 
+}
+
+.intro-titulo1{
+    margin:  30px 300px 0 50px ;
+    font-size: 40px;
+}
+  
+h1{
+    text-align: left;
+    font-size: 40px;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    margin:70px 0 0 50px;
+}
+
+.primer-titulo{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    font-weight: 100;
+    color:black;
+}
+     
+main .slogan{
+    background-color:white;
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+main .slogan .descripcion1{
+    font-family: sans-serif;
+    width: 130px;
+    height: 50px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+main .slogan .descripcion2{ 
+    font-family: sans-serif;
+    width: 130px;
+    height: 50px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+main .slogan .descripcion3{
+    font-family: sans-serif;
+    width: 130px;
+    height: 50px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.titulo{
+    background-color: rgb(228, 231, 235);
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    font-weight: 100;
+}
+
+.container-main{
+    width:100%;
+    max-width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-main .tarjetas{
+    background-color:white;
+    width: 330px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    cursor: default;                                                     
+    /* TRANSITION:de 400ms y(ease)                     
+    para que no sea tosco la transicion */
+    transition: all 400ms ease;
+}
+
+.tarjetas img{
+    height: 100%px;
+}
+
+.container-main .tarjetas:hover{
+/* TRANSFORM:translate ,
+   la tarjeta se desliza hacia arriba (eje Y)*/ 
+    transform: translateY(-15px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.container-main .tarjetas img{
+    width: 300px;
+    height: 300px;
+}
+.container-main .tarjetas h4{
+    font-family: sans-serif;
+    font-weight: 600;
+    color:black;
+    margin: 5px 15px;
+}
+.container-main .tarjetas .text{
+    font-family: sans-serif;
+    line-height: 1.5;
+    color:#6a6a6a;
+}
+.booton a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    color: #000;
+    font-family: sans-serif;
+    /* Aplicando Gradiente */
+    background-image: linear-gradient(to left,#8acfdb,rgb(74, 206, 74));      
+}
+
+
+/*FOOTER*/
+footer{
+    background: 100%;
+    background: #202020;
+    color: #fff;
+}
+
+.contenedor-footer{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 40px;
+    height: 150px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.column1{
+width: 400px;
+}
+
+.column1 img{
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.column1 h6{
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.column2{
+    width: 400px;
+}
+
+.column2 h6{
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.fila{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 140px;
+}
+
+.fila img{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+.fila label{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.column3{
+    width: 400px;
+}
+
+.column3 h6{
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fila2{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+ .fila2 label{
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+
+/* SECCION QUIENES SOMOS */
+
+.portada-somos{
+    background-image: url(../images/somos-equipo.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color:#000;
+    color: rgb(250, 246, 246);
+}
+.texto-portada{
+    text-align: center;
+    font-size: 50px;
+    padding: 80px;
+}
+
+.section{
+    display: flex;
+    width:auto;
+    height: 600px;;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#fff;
+    align-items: center;  
+}
+
+.section .bloque1{
+    background-color:#fff;
+    height: 600px;
+    width: 60%;
+    display: flex;
+    flex-direction: column; 
+    margin: auto; 
+    color: black;
+}
+
+.section .bloque2{
+    background-color:white;
+    height: 600px;
+    width: 40%;
+    display: flex;  
+} 
+
+.bloque1 .texto-uno{
+    background-color:#fff;
+    margin: auto;
+    font-size: 20px;
+    padding:20px;
+    text-align: center;
+    width:700px ;
+    line-height: 25px;
+}
+
+.texto-uno h4{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.texto-dos h6{
+    font-size: 35px;
+    padding-bottom: 15px;
+    line-height: 37px;
+}
+
+.bloque1 .texto-dos{
+    background-color:#fff;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 700px;
+    line-height: 25px;
+}
+
+.box-logo{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+}
+
+.section .box-logo img{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 150px;
+}
+
+.icono img{
+    width: 90px;
+}
+
+
+/* SECCION PRODUCTOS */  
+
+.productos{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 30px;   
+}
+
+.container {
+    padding: 10px;
+    width: 800px;
+    height: 700px;
+    margin: 0  auto;
+    background-color:#fff;
+ /* propiedad Grid */
+    display: grid;                                     
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    grid-column-gap:10px;
+    grid-row-gap:10px;
+}
+
+.titulo-productos{
+    text-align: center;
+    font-size: 40px;
+}
+
+.galeria{
+    width: 750px;
+    margin: 5px 12px;
+/* propiedad Grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+   
+.galeria img{
+    width: 100%;
+}
+
+.galeria img:hover {
+    opacity: 0.5;
+}
+
+
+/* SECCION SERVICIOS */  
+
+.portada-servicios{
+    background-image: url(../images/motex.png);
+    height: 400px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:rgba(241, 241, 241, 0.946);
+    color: #fff;
+}
+
+.portada-servicios h4{
+    font-size: 50px;
+    color: rgb(189, 181, 181);
+}
+
+.texto-servicios{
+    background-color: white;
+    text-align: center;
+    margin: 25px;
+    font-family: sans-serif;
+    line-height: 20px;
+}
+
+.contenedor-flex{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.contenedor-flex .box{
+    display: flex;
+    background-color:white;
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center; 
+}
+
+.contenedor-flex .box .box-parrafo{ 
+    background-color:white;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding-top: 100px;
+    margin: 50px;
+}
+.contenedor-flex .box .parrafo{
+    display: flex;
+    background-color:white; 
+    font-size: 20px; 
+}
+
+.contenedor-flex2{
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; 
+    border-radius: 8px; 
+}
+.contenedor-flex2 .box1{
+    background-color:white;
+    width: 400px;
+    height: 230px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+}
+.contenedor-flex2 img{
+    width: 400px;
+    border-radius: 8px;
+}
+
+.contenedor-flex2 .box1 .box-parrafo1{
+    background-color:white;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding-top: 25px;
+    margin: 50px;
+    font-size: 20px;
+}
+
+
+
+/*SECCION CONTACTO*/ 
+
+.container-formulario{
+    display: flex;
+    width: 100%;
+    height: 100vp;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    height:40%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+ input, textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 15px;
+    width: 80%;
+    transition: all 300ms;
+    margin: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    border:solid 0.3px #000
+}
+
+button{
+    border:none;
+    outline:none;
+    background-color:darkgrey;
+    padding: 15px;
+    width: 200px;
+    padding: 15px;
+    color:black;
+    border-radius:2px ;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px;
+    margin: 20px 0px;
+    cursor:pointer;
+    transition: all 300ms;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px;
+}
+
+
+/* Aqui termina */
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
